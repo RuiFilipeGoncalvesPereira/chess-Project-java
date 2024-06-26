@@ -30,13 +30,18 @@ public class Board {
 		this.columns = columns;
 	}
 
-    public Piece piece(int row, int column)
+    public Piece piece(int rook, int position)
     {
-    	return pieces[row][column];
+    	return pieces[rook][position];
     }
 	public Piece piece(position position)
 	{
 		return pieces[position.getRow()][position.getColumn()];
+	}
+	public void placePiece(Piece piece, position position)
+	{
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
 	}
 	
 
