@@ -1,7 +1,5 @@
 package chess.piece;
 
-import javax.swing.text.Position;
-
 import boardgame.Board;
 import chess.ChessPiece;
 import chess.Color;
